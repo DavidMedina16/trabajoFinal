@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+/* VARIABLES */
+:root{
+    --colorFondo: beige;
+    --colorBotones: #CEFCD5;
+    --colorTipografiaBotones: #1F192F;
+    --colorDecoraciones: #B5E8C3;
+    --textFont: "Lora", serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+body {
+    font-family: var(--textFont);
+    background-color: var(--colorFondo);
+    margin: 0;
+    padding: 0;
+    color: black;
+    width: 100vw;
+    height:auto;
+    overflow-x: hidden;
+    height: 100vh;
+    
+}
+
+
+main {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    width: 100%;
+    height: 70vh;
+    
+}
+
+section {
+    background-color: var(--colorFondo);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+section h2 {
+    background-color: var(--colorDecoraciones);
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+section ul li {
+    margin: 10px 0;
+    padding-left: 20px;
+    position: relative;
+}
+
+section ul li::before {
+    content: '➤';
+    position: absolute;
+    left: 0;
+    color: black;
+}
+
+footer h3 {
+    margin-bottom: 50px;
+    justify-content: start;
+}
+
+.tituloPrincipal{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px
+    
+
+
+}
+
+footer .infoContacto, footer .redesSociales {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+footer .infoContacto ol, footer .redesSociales ol {
+    list-style: none;
+    padding: 0;
+    margin: 0 20px;
+}
+
+footer .infoContacto ol li, footer .redesSociales ol li {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+footer .infoContacto ol li i, footer .redesSociales ol li i {
+    margin-right: 10px;
+}
+
+.logo3 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 0;
+}
+
+.logo3 img {
+    width: 100px;
+    height: 100px;
+   
+}
+
+footer {
+    max-width: 80%;
+    background-color: var(--colorDecoraciones);
+    color: black;
+    padding: 20px 0;
+    /*border-top-left-radius: 50px;*/
+    border-top-right-radius: 100px;
+    display: flex;
+    position: relative;
+
+    text-align: center;
+    height: 30vh;
+    
+}
