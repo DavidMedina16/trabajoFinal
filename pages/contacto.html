@@ -11,13 +11,14 @@
     <meta name="keywords"
         content="contador, contador publico, contabilidad, servicios contables, LEMA, LEMA CONSULTORIAS, asesorias contables">
     <!--Palabras clave para encontrar el sitio web en internet-->
-    <link rel="stylesheet" href="../styles/contacto.css">
+    <link rel="stylesheet" href="../styles/contacto.css">   
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"> <!-- vinculacion de iconos-->    
     <title>LEMA Consultorias</title>
 </head>
 
 <body>
 
-    <!-- MAIN -->
+    <!----- Main ----->
 
     <main>
 
@@ -31,25 +32,25 @@
 
                 <!-- Titulo y subtitulo -->
 
-                <h1 class="titulo">Te interesan nuestros servicios?</h1>
+                <h1 class="titulo">¿Te interesan nuestros servicios?</h1>
                 <h2 class="subtitulo">Llena este formulario y nos contactaremos contigo</h2>
 
                 <!-- Formulario -->
 
                 <form class="form">
                     <div class="formContainer">
-                        <input type="text" id="nombreCliente" name="name" placeholder="* Nombre completo">
-                        <input type="email" id="emailCliente" placeholder="* Correo Electronico">
-                        <div>
-                            <div>
+                        <input type="text" class="inputForm" name="name" placeholder="* Nombre completo">
+                        <input type="email" class="inputForm" placeholder="* Correo Electronico">
+                        <div class="contenedorTelefono">
+                            <div class="identificador">
                                 <img src="../assets/banderaColombia.jpg" alt="">
                                 <h2>+57</h2>    
                             </div>
-                            <input type="tel" id="telefonoCliente" placeholder="* Numero"> 
+                            <input type="tel" class="inputForm inputTel" placeholder="* Numero"> 
                         </div>
-                        <input type="text" id="nombreEmpresa" placeholder="* Nombre de la empresa (o indicar si es persona natural) ">
-                        <input type="text" id="tipoEmpresa" placeholder="* Tipo de la empresa (ninguno si es persona natural)">
-                        <input type="text" id="servicio" placeholder="* Servicio de interes">
+                        <input type="text" class="inputForm" placeholder="* Nombre de la empresa (o indicar si es persona natural) ">
+                        <input type="text" class="inputForm" placeholder="* Tipo de la empresa (ninguno si es persona natural)">
+                        <input type="text" class="inputForm" placeholder="* Servicio de interes">
                     </div>
                 </form>
             </article>
@@ -60,7 +61,7 @@
 
                 <!-- Parrafo informacion -->
 
-                <p>
+                <p class="parrafoInfo">
                     Al llenar este formulario, nos autorizará para contactarnos con usted y brindarle la mejor asistencia
                     posible mediante nuestros asesores. Podrá contarnos cualquier duda que tenga sobre los servicios, y
                     si está interesado en contratar los mismos, nos podrá decir en cualquier momento, y con mucho gusto
@@ -73,7 +74,7 @@
 
                 <!-- Parrafo de contrato de tratamiento de datos -->
 
-                <p>
+                <p class="parrafoContrato">
                     Al enviar sus datos, usted autoriza expresamente a Lema Consultorías a recopilar, almacenar, usar y
                     tratar los datos personales proporcionados, conforme a lo establecido en la Ley de Protección de
                     Datos Personales. Esta autorización se otorga con el propósito de llevar a cabo las actividades
@@ -87,29 +88,31 @@
         </section>
     </main>
 
-    <!-- FOOTER -->
+    <!----- Footer ----->
 
     <footer>
+        <section class="rectanguloFooter">
 
-        <h3>¡Encuéntranos en nuestras Redes Sociales o en nuestro punto físico!</h3> <!-- Titulo principal del footer -->
+            <h3>¡Encuéntranos en nuestras Redes Sociales o en nuestro punto físico!</h3> <!-- Titulo principal del footer -->
 
-        <div class="infoContacto"> <!-- Seccion de informacion de contaco del footer -->
-            <ol>
-                <li><i class="bi bi-geo-alt-fill"></i>Calle 64e #1w48</li>
-                <li><i class="bi bi-envelope-fill"></i>contacto@lemaconsultorias.com</li>
-                <li><i class="bi bi-telephone-fill"></i>3015374298</li>
-            </ol>
-        </div>
+            <div class="infoContacto"> <!-- Seccion de informacion de contaco del footer -->
+                <ol class="listaFooter">
+                    <li><i class="bi bi-geo-alt-fill"></i>Calle 64e #1w48</li>
+                    <li><i class="bi bi-envelope-fill"></i>contacto@lemaconsultorias.com</li>
+                    <li><i class="bi bi-telephone-fill"></i>3015374298</li>
+                </ol>
+            </div>
 
-        <div class="redesSociales"> <!-- Seccion de redes sociales -->
-            <ol>
-                <li><i class="bi bi-tiktok"></i>@lemaconsultorias</li>
-                <li><i class="bi bi-instagram"></i>@lemaconsultorias</li>
-                <li><i class="bi bi-facebook"></i>Lema Consultorias</li>
-                <li><i class="bi bi-twitter-x"></i>@lemaconsultorias</li>
-            </ol>
-        </div>
+            <div class="redesSociales"> <!-- Seccion de redes sociales -->
+                <ol class="listaFooter">
+                    <li><i class="bi bi-tiktok"></i>@lemaconsultorias</li>
+                    <li><i class="bi bi-instagram"></i>@lemaconsultorias</li>
+                    <li><i class="bi bi-facebook"></i>Lema Consultorias</li>
+                    <li><i class="bi bi-twitter-x"></i>@lemaconsultorias</li>
+                </ol>
+            </div>
 
+        </section>
         <div class="logo3"> <!-- Logo del footer -->
             <img class="logoFooter" src="../assets/logoLema.png" alt="logo">
         </div>
