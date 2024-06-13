@@ -9,10 +9,11 @@
 
 <!------------------------------- Aca empiezan las vinculaciones a el documento HTML ------------------------------->
     <link rel="shortcut icon" href="./assets/logoLema.png" type="image/x-icon"> <!-- Vinculacion de imagen para icono que aparecera en la pestaña de la pagina -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> <!-- vinculacion a el framework materialize para implementar el carrusel-->
-    <link rel="stylesheet" href="./styles/index.css"> <!--Vinculacion de la hoja de estilos-->
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"> <!-- vinculacion de iconos-->
+    <link rel="stylesheet" href="./styles/index.css"> <!--Vinculacion de la hoja de estilos-->
     <script src="./scripts/script.js"defer></script>
+
 <!------------------------------- Aca finalizan las vinculaciones a el documento HTML ------------------------------->
 
     <title>LEMA Consultorias</title> <!--Texto que sale en la pestaña de el sitio web-->
@@ -22,37 +23,37 @@
     <header>
         <nav class="menuNav"> <!-- seccion del menu principal -->
             <ul class="listaMenu"> <!-- lista de las opciones del menu principal -->
-                <li><a href="#"><i class="bi bi-telephone-fill"></i></a></li> <!-- usamos los iconos de bootstrap en este caso en icono de phone -->
+                <li><a href="#"><i class="bi1 bi-telephone-fill"></i></a></li> <!-- usamos los iconos de bootstrap en este caso en icono de phone -->
                 <li><a href="#"><img class="logo" src="./assets/logoLema.png" alt=""></a></li> <!-- usamos el icono de la empresa importado desde nuestra carpeta assets-->
-                <li><a href="#"><i class="bi bi-list"></i></a></li> <!-- usamos los iconos de bootstrap en este caso en icono de list -->
+                <li><a href="#"><i class="bi2 bi-list"></i></a></li> <!-- usamos los iconos de bootstrap en este caso en icono de list -->
             </ul>
         </nav>
     </header>
 <!------------------------------- Aca finaliza el header ------------------------------->
-<hr>
+
 <!------------------------------- Aca empieza el main ------------------------------->
     <main>
         <section class="seccion1">
             <div class="sobreNosotros">
-                <h2 class="titulo1">¿Quiénes Somos?</h2>
+                <h2>¿Quiénes Somos?</h2>
                 <p>Somos una empresa de consultoría especializada en asesorías tributarias, laborales y contables. Nuestro equipo está conformado por profesionales de muy alta reputación.</p>
             </div>
      
-            <div class="pregunta-interes">
-                <h2 class="titulo2">¿Te Interesa?</h2>
-                <button class="boton-contacto">CONTACTANOS</button>
+            <div class="preguntaInteres">
+                <h2>¿Te Interesa?</h2>
+                <button class="botonContacto">CONTACTANOS</button>
             </div>
     
             <div class="servicios1">
                 <h2>Servicios</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil est dolor deleniti assumenda corrupti facere, quidem esse laudantium pariatur cupiditate! Esse temporibus, rem deleniti molestiae deserunt neque voluptatibus culpa consectetur.</p>
+                <p>Somos una empresa de consultoría especializada en asesorías tributarias, laborales y contables. Nuestro equipo está conformado por profesionales de muy alta reputación.</p>
             </div>
          </section>
 
 <hr>
 
         <section class="seccion2">
-            <div class="vision-mision">
+            <div class="visionMision">
                 <div class="vision">
                     <img src="./assets/vision.jpg" alt="imagen-vision">
                     <h2>Visión</h2>
@@ -64,49 +65,51 @@
                     <h2>Misión</h2>
                     <p>Somos una empresa de consultores especializados en brindar soluciones integrales a empresas y profesionales de muy alta reputación</p>
                 </div>
-                <button class="boton-servicios">SERVICIOS</button>
+            </div>
+
+            <div class="botonServicios">
+                <button>SERVICIOS</button>
             </div>
     
-            <div class="Clientes">
-                <h2 class="titulo3">¡Nuestros Clientes!</h2>
-                <div>
-                    <img src="./assets/imagenesCarrusel1/img1.jpeg" alt="imagenes-carrusel1">
-                    <img src="./assets/imagenesCarrusel1/img2.jpeg" alt="imagenes-carrusel1">
-                    <img src="./assets/imagenesCarrusel1/img3.jpeg" alt="imagenes-carrusel1">
-                    <img src="./assets/imagenesCarrusel1/img4.jpeg" alt="imagenes-carrusel1">
+            <div class="clientes">
+                <h2>¡Nuestros Clientes!</h2>
+                <div class="imgCarrusel">
+                    <img src="./assets/imagenesCarrusel1/img1.png" alt="imagenes-carrusel1">
+                    <img src="./assets/imagenesCarrusel1/img2.png" alt="imagenes-carrusel1">
+                    <img src="./assets/imagenesCarrusel1/img3.png" alt="imagenes-carrusel1">
+                    <img src="./assets/imagenesCarrusel1/img4.png" alt="imagenes-carrusel1">
                     <img src="./assets/imagenesCarrusel1/img5.png"  alt="imagenes-carrusel1">
                 </div>
             </div>    
         </section>
 
-<hr>
-
         <section class="seccion3">
             <div>
                 <h2>Asociaciones</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam nobis earum quis recusandae consequatur at alias inventore. Minus et ducimus quae explicabo ab debitis commodi, facilis fugiat, doloribus mollitia atque? Lorem ipsum dolor sit amet consectetur adipisicing elit. In laudantium tenetur repudiandae. Voluptate porro beatae officiis, in deleniti tempore quisquam quas, magni odio provident laudantium dolores itaque autem eum consequuntur?</p>
+                <p class="parrafoAsociaciones">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam nobis earum quis recusandae consequatur at alias inventore. Minus et ducimus quae explicabo ab debitis commodi, facilis fugiat, doloribus mollitia atque? Lorem ipsum dolor sit amet consectetur adipisicing elit. In laudantium tenetur repudiandae. Voluptate porro beatae officiis, in deleniti tempore quisquam quas, magni odio provident laudantium dolores itaque autem eum consequuntur?</p>
             </div>
 
             <div class="carrusel1">
                 <div class="contenedorimg">
-                    <img src="#" alt="imagenEmpresa1">
-                    <img src="#" alt="imagenEmpresa2">
-                    <img src="#" alt="imagenEmpresa3">
-                    <img src="#" alt="imagenEmpresa4">
-                    <img src="#" alt="imagenEmpresa5">
-                    <img src="#" alt="imagenEmpresa6">
+                    <img src="./assets/imagenesCarrusel1/img1.png" alt="imagenEmpresa1">
+                    <img src="./assets/imagenesCarrusel1/img1.png" alt="imagenEmpresa2">
+                    <img src="./assets/imagenesCarrusel1/img1.png" alt="imagenEmpresa3">
+                    <img src="./assets/imagenesCarrusel1/img1.png" alt="imagenEmpresa4">
+                    <img src="./assets/imagenesCarrusel1/img1.png" alt="imagenEmpresa5">
+                    <img src="./assets/imagenesCarrusel1/img1.png" alt="imagenEmpresa6">
                 </div>
             </div>
         </section>
     </main>
 <!------------------------------- Aca finaliza el main ------------------------------->
-<hr>
 <!------------------------------- Aca empieza el footer ------------------------------->
-    <footer>
+<footer>
+    <section class="rectanguloFooter">
+
         <h3>¡Encuéntranos en nuestras Redes Sociales o en nuestro punto físico!</h3> <!-- Titulo principal del footer -->
 
         <div class="infoContacto"> <!-- Seccion de informacion de contaco del footer -->
-            <ol>
+            <ol class="listaFooter">
                 <li><i class="bi bi-geo-alt-fill"></i>Calle 64e #1w48</li>
                 <li><i class="bi bi-envelope-fill"></i>contacto@lemaconsultorias.com</li>
                 <li><i class="bi bi-telephone-fill"></i>3015374298</li>
@@ -114,7 +117,7 @@
         </div>
 
         <div class="redesSociales"> <!-- Seccion de redes sociales -->
-            <ol>
+            <ol class="listaFooter">
                 <li><i class="bi bi-tiktok"></i>@lemaconsultorias</li>
                 <li><i class="bi bi-instagram"></i>@lemaconsultorias</li>
                 <li><i class="bi bi-facebook"></i>Lema Consultorias</li>
@@ -122,10 +125,11 @@
             </ol>
         </div>
 
-        <div class="logo3"> <!-- Logo del footer -->
-            <img class="logoFooter" src="./assets/logoLema.png" alt="logo">
-        </div>
-    </footer>
+    </section>
+    <div class="logo3"> <!-- Logo del footer -->
+        <img class="logoFooter" src="../assets/logoLema.png" alt="logo">
+    </div>
+</footer>
 <!------------------------------- Aca finaliza el footer ------------------------------->
 </body>
 </html>
