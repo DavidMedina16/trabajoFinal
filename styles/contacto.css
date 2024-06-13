@@ -6,6 +6,7 @@
     --colorFondo: beige;
     --colorBotones: #CEFCD5;
     --colorTipografiaBotones: #1F192F;
+    --colorTipografiaHover: #F1FCCE;
     --colorDecoraciones: #B5E8C3;
     --fuenteTitulo: "Lora", serif;
     --fuenteTexto: "Arimo", serif;
@@ -19,7 +20,7 @@
 
 body{
     font-family: var(--fuenteTexto);
-    background-color: var(--colorFondo);
+    background-color: whitesmoke;
     width: 100vw;
     height: 100vh;
     /* overflow-x: hidden; */
@@ -30,7 +31,7 @@ body{
 main{
     width: 100%;
     height: 78vh;
-    border: 5px solid black;
+    border: 5px solid var(--colorFondo);
 }
 
 .contenedorMain{
@@ -42,6 +43,14 @@ main{
     display: grid;
     grid-template-columns: 1.5fr 1fr;
     padding: 20px;
+}
+
+/* Seccion Izquierda */
+/* Titulo y subtitulo */
+
+.contenedorIzquierda{
+    width: 100%;
+    height: 100%;
 }
 
 .titulo{
@@ -57,62 +66,139 @@ main{
     margin-bottom: 15px;
 }
 
+/* Formulario */
+
 .formContainer{
     display: flex;
     justify-content: center;
+    width: 100%;
+    height: 100%;
     gap: 13px;
     margin-right: 50px;
-    border: 5px solid red;
     flex-direction: column;
 }
 
 .inputForm{
-    height: 22px;
+    height: 35px;
     width: 100%;
+    padding-left: 10px;
+    border: 2px solid #A4A4A4;
+    border-radius: 12px;
+    box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.43);
+    outline: none;
 }
 
 .inputTel{
-    padding-left: 80px;
+    padding-left: 94px;
 }
 
 .contenedorTelefono{
     position: relative;
-    border: 3px solid blue;
 }
 
 .identificador{
     position: absolute;
     top: 0;
     left: 0;
-    height: 22px;
+    height: 35px;
     display: flex;
-    border: 3px solid red;
+    padding: 6px;
+    margin-bottom: 3px;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    border: 2px solid #A4A4A4;
+    border-radius: 12px;
+}
+
+.identificador img{
+    height: 24px;
+    width: 36.44px;
 }
 
 .identificador h2{
-    font-size: 15px;
+    font-size: 18px;
+    font-weight: 400;
 }
+
+/* Seccion Informacion y boton enviar (Derecha) */
+
+.contenedorDerecha{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+/* Parrafo informacion */
 
 .parrafoInfo{
     text-align: center;
-    margin: 20px;
+    height: 220px;
+    margin: 20px 35px 0px 45px;
     font-size: 20px;
 }
+
+/* Boton enviar */
 
 .botonEnviar{
     background-color: var(--colorBotones);
     border: none;
-
+    position: relative;
+    margin: 20px;
+    left: 24%;
+    width: 214.28px;
+    height: 50px;
+    font-size: 15px;
+    font-weight: bolder;
+    color: var(--colorTipografiaBotones);
+    border-radius: 10px;
+    box-shadow: 0px 4px 3px 0.75px rgba(0,0,0,0.72);
 }
 
-.parrafoContrato{
+.botonEnviar:hover{
+    background-color: var(--colorTipografiaBotones);
+    color: var(--colorTipografiaHover);
+}
+
+.botonEnviar:active{
+    background-color: var(--colorBotones);
+    color: var(--colorTipografiaBotones);
+}
+
+/* Checkbox de contrato de tratamiento de datos */
+
+.labelLeyDatos{
+    font-family: var(--fuenteTexto);
+    font-size: 15px;
+    font-weight: bolder;
     text-align: center;
-    margin-top: 30px;
+    margin-top: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.linkLeyDatos{
+    text-decoration: none;
+    font-family: var(--fuenteTexto);
+    font-size: 15px;
+    font-weight: bolder;
+    color: #342854;
+}
+
+.linkLeyDatos:hover{
+    text-decoration: underline;
+    text-decoration-color: #342854;
+}
+
+/* .parrafoContrato{
+    text-align: center;
+    margin-top: 10px;
     margin-left: 75px;
     margin-right: 75px;
-    font-size: 10px;
+    font-size: 11px;
     color: gray;
-}
+} */
 
 /* ----- Footer ----- */
 
@@ -132,8 +218,8 @@ footer{
     grid-template-rows: 1fr 3fr;
     grid-column-gap: 25px;
     grid-row-gap: 10px;
-    border-radius: 0% 200px 0% 0%;
-    box-shadow: -7px 7px 5px 11px rgb(87, 143, 103);
+    border-radius: 0px 200px 0px 0px;
+    box-shadow: -7px 7px 4px 11px rgb(101,135,106,1);
 }
 
 .rectanguloFooter h3 {
@@ -166,6 +252,20 @@ footer{
     display: flex;
     padding: 3px;
     gap: 10px;
+}
+
+.bi{
+    color: #342854;
+    font-size: 19px;
+}
+
+.linkRedes{
+    text-decoration: none;
+    color: black;
+}
+
+.linkRedes:hover{
+    color: #614f94;
 }
 
 .logo3{
