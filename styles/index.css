@@ -19,6 +19,7 @@
 
 body {
     font-family: var(--textFont);
+    box-sizing: border-box;
 }
 
 /* ---------------------------------- HEADER ---------------------------------- */
@@ -44,13 +45,11 @@ header {
 
 .listaMenu li {
     display: flex;
-    align-items: center;
     justify-content: center;
 }
 
 .listaMenu li a {
     display: flex;
-    align-items: center;
     justify-content: center;
     text-decoration: none;
     color: var(--colorTipografiaBotones);
@@ -103,34 +102,38 @@ main{
     place-content: center;
     align-items: center;
     justify-content: center;
-    gap: 5%;
-    font-size:medium;
+    gap: 4%;
+    font-size: 1rem;
     padding: 2vw;
+    max-width: 100%;
+    flex-flow: row nowrap;
 }
 
-h2{
-    justify-content: center;
-    display: flex;
-}
-
-.seccion1 .sobreNosotros{
+.sobreNosotros{
     width: 100%;
     height: 100%;
+    line-height: 1.5;
     justify-content: center;
     align-items: center;
     text-align: center;
     place-content: center;
+    max-width: 100%;
+    padding: 2vw;
     box-shadow: 2px 2px 5px rgb(0, 0, 0, 0.3);
 }
 
-.seccion1 .preguntaInteres{
+.preguntaInteres{
     width: 100%;
     height: 100%;
+    line-height: 1.5;
     justify-content: center;
     align-items: center;
-    place-content: center;
     text-align: center;
+    place-content: center;
+    max-width: 100%;
 }
+
+
 
 button{
     background-color: var(--colorBotones); /* Color de fondo del botón */
@@ -142,74 +145,124 @@ button{
     font-family: var(--textFont);
     stroke: var(--colorTipografiaBotones);
     font-weight: bolder;
-    font-size: large;
-    box-shadow: 2px 2px 5px black;(0, 0, 0, 0.3)
+    font-size: 1rem;
+    box-shadow: 1px 2px 9px black; (5, 5, 1, 1)
 }
 
-.seccion1 .servicios1{
-    width: 90vw;
+.servicios1{
+    width: 100%;
     height: 100%;
-    place-content: center;
+    line-height: 1.5;
     justify-content: center;
     align-items: center;
     text-align: center;
+    place-content: center;
+    max-width: 100%;
+    padding: 2vw;
     box-shadow: 2px 2px 5px rgb(0, 0, 0, 0.3);
 }
 
 .seccion2{
+    width: 100%;
     height: 100%;
     gap: 3%;
     padding: 2vw;
+    align-items: center;
+    justify-content: center;
     place-content: center;
 }
 
-.visionMision{
-    padding: 2vw;
+h2{
     justify-content: center;
     display: flex;
-    align-items: center;
-    gap: 23%;
-    width: 100%;
+    font-size: 1rem;
+}
+
+.visionMision{
     height: 100%;
+    width: 100%;
+    line-height: 1.5;
+    align-items: center;
+    text-align: center;
+    place-content: center;
+    max-width: 100%;
+    padding: 2vw;
+    gap: 25%;
+    display: flex;
 }
 
 img{
     box-shadow: 2px 2px 5px rgb(2, 0, 0, 2); /* sombra para todas las imagenes */
 }
 
-.vision{
-    justify-content: center;
-    align-items: center;
+.imgVision{
+    padding: 2%;
+    display: flex;
+}
+
+.imgMision{
+    padding: 2%;
+    display: flex;
 }
 
 h2{
     padding-top: 5%;
-    font-size:xx-large;
+    font-size: 2rem;
 }
 
 p{
     padding: 2%;
     text-align: center;
-    font-size: larger;
+    font-size: 1rem;
 }
 
 .botonServicios{
     width: 100%;
     height: 100%;
-    place-content: center;
+    line-height: 1.5;
     justify-content: center;
     align-items: center;
-    display: flex;
-    padding: 2vw;
+    text-align: center;
+    place-content: center;
+    max-width: 100%;
+    padding: 3%;
+}
+
+.carousel {
+    max-width: 50%;
+    position: relative;
+    margin: auto;
+  }
+  
+
+.carousel-item {
+    flex: 0 0 100%;
+    transition: transform 0.5s ease;
+}
+  
+.carousel-item img {
+    width: 100%;
+    height: auto;
 }
 
 .clientes{
-    padding: 2%;
+    padding: 2vw;
+}
+
+.tituloClientes{
+    padding-bottom: 10vw;
 }
 
 .imgCarrusel{
-    padding-top: 3%;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    overflow: hidden;
+    border: 2px solid #000;
+    border-radius: 10px;
 }
+
 
 .parrafoAsociaciones{
     padding: 10%;
@@ -219,13 +272,23 @@ p{
 
 .carrusel1{
     padding: 5%;
+    display: flex;
 }
 
+.contenedorimg{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    overflow: hidden;
+    border: 2px solid #000;
+    border-radius: 10px;
+}
 /* ---------------------------------- FOOTER ---------------------------------- */
 
 footer{
     width: 100%;
-    height: 22%;
+    height: 100%;
     display: flex;
     position: relative;
 }
@@ -271,22 +334,23 @@ footer{
 
 .listaFooter li{
     display: flex;
-    padding: 3px;
-    gap: 10px;
+    padding: 1%;
+    gap: 2%;
 }
 
 .bi{
     color: #342854;
-    font-size: 19px;
+    font-size: 1rem;
 }
 
 .logo3{
     position: absolute;
     bottom: 8%;
-    right: 3%;
+    right: 2%;
 }
 
 .logoFooter{
     width: 202.92px;
     height: 130px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0);
 }
