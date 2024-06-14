@@ -114,7 +114,7 @@ h2{
 }
 
 .seccion1 .sobreNosotros{
-    width: 90vw;
+    width: 100%;
     height: 100%;
     justify-content: center;
     align-items: center;
@@ -124,7 +124,7 @@ h2{
 }
 
 .seccion1 .preguntaInteres{
-    width: 60vw;
+    width: 100%;
     height: 100%;
     justify-content: center;
     align-items: center;
